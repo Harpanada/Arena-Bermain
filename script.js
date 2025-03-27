@@ -49,24 +49,42 @@ const prev= document.getElementById('prev');
 const next =document.getElementById('next');
 //Penetapan default index
 let index=0;
+let intervalId;
+let counter= 0;
 
-//Fungsi merubah carousel
-function updateCarousel(){
+// Fungsi merubah carousel
+function updateCarousel() {
   carousel.style.transform = `translateX(-${index * 100}%)`;
 }
 
-//Carousel akan bergeser ke kiri sebanyak tombol di klik
-next.addEventListener('click',()=>{
+// Fungsi untuk mereset interval
+function resetInterval() {
+  clearInterval(intervalId); // Hentikan interval sebelumnya
+  startInterval(); // Mulai interval baru dari awal
+}
+
+// Fungsi memulai interval
+function startInterval() {
+  intervalId = setInterval(() => {
+    index = (index + 1) % img.length;
+    updateCarousel();
+  }, 5000); // Durasi tetap 5000ms
+}
+
+// Event listener tombol next
+next.addEventListener('click', () => {
   index = (index + 1) % img.length;
- updateCarousel();
-})
-//Carousel akan bergeser ke kanan sebanyak tombol di klik
-prev.addEventListener('click',() =>{
+  updateCarousel();
+  resetInterval(); // Reset waktu ke 5000ms lagi
+});
+
+// Event listener tombol prev
+prev.addEventListener('click', () => {
   index = (index - 1 + img.length) % img.length;
   updateCarousel();
-})
-//Carousel akan bergeser ke kiri lalu di reset ke kanan dengan otomatis sesuai durasi
-setInterval(() => {
-  index = (index + 1) % img.length;
-  updateCarousel();
-}, 3000);
+  resetInterval(); // Reset waktu ke 5000ms lagi
+});
+
+// Mulai interval pertama kali
+startInterval();
+
