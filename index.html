@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="overflow-x-hidden">
+<html class="overflow-x-hidden scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,11 +22,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
   <title>KopiIn</title>
 </head>
-<body class="overflow-x-hidden">
+<body id="home" class="overflow-x-hidden">
   <!-- Navbar -->
-   <nav class="flex justify-between items-center bg-yellow-900 py-6 px-8 text-white relative shadow-lg z-50">
+   <nav class="fixed flex justify-between items-center bg-white py-6 px-8 text-black w-full shadow-lg z-50">
     <div class="logo">
-      <h1 class="font-lora font-bold italic text-3xl ">KopiIn.</h1>
+      <h1 class="font-lora font-bold italic text-3xl sm:text-4xl lg:text-5xl ">KopiIn.</h1>
     </div>
     <div class="mt-2 md:hidden">
       <input  type="checkbox" name="" id="checkBox" class="absolute h-6 w-6 opacity-0">
@@ -34,24 +34,26 @@
         menu 
         </span>
     </div>
-    <ul id="" class="md:flex hidden text-white gap-5 ">
-      <li class="font-fancy"><a href="">Home</a></li>
+    <ul id="" class="sm:flex hidden text-black gap-5 sm:text-lg lg:text-xl ">
+      <li class="font-fancy"><a href="#home">Home</a></li>
+      <li class="font-fancy"><a href="#about">About</a></li>
       <li class="font-fancy"><a href="">Service</a></li>
       <li class="font-fancy"><a href="">Menu</a></li>
       <li class="font-fancy"><a href="">Contact</a></li>
     </ul>
    </nav>
    <!-- Navbar Mobile -->
-   <ul id="slide" class=" flex fixed top-20 right-0 h-screen  translate-x-full bg-yellow-950 transition duration-200 ease-in-out z-30
-     items-center gap-10 flex-col w-1/2 text-white text-lg sm:hidden " >
+   <ul id="slide" class=" flex fixed top-20 right-0 h-screen  translate-x-full bg-white bg-opacity-90 transition duration-200 ease-in-out z-30
+     items-center gap-10 flex-col w-1/2 text-black text-lg sm:hidden " >
      <li class="font-fancy mt-16"><a href="">Home</a></li>
+     <li class="font-fancy "><a href="#about">About</a></li>
      <li class="font-fancy"><a href="">Service</a></li>
      <li class="font-fancy"><a href="">Menu</a></li>
      <li class="font-fancy"><a href="">Contact</a></li>
    </ul>
   
    <!-- Akhir Navbar -->
-    <div class=" w-full h-full overflow-hidden bg-gray-200 sm:p-5 ">
+    <div class=" w-full h-full overflow-hidden bg-gray-200 sm:p-5 mt-20 sm:mt-0 ">
 
       <div class="sm:w-4/5 overflow-hidden mx-auto relative">
            <div class="flex items-center justify-center  ">
@@ -76,12 +78,44 @@
          </div>
            </div>
     </div>
+    <div id="" class=" flex flex-col w-full justify-center items-center mt-16 mb-16 ">
+      <h1 class="text-center p-3  font-fancy font-semibold text-xl sm:text-2xl lg:text-3xl hover:text-yellow-950 hover:scale-125 transition-all ease-in-out delay-300 
+      duration-200"> KopiIn Where Every Sip Feels Like Home! .</h1>
+    </div>
 
+  <div id="about" class=" flex flex-col w-full justify-center items-center mt-1  ">
+    <h1 class="kopiin-title relative font-lora font-bold italic sm:text-6xl lg:text-7xl text-5xl hover:text-yellow-950 hover:scale-125 transition-all ease-in-out delay-300 duration-200">KopiIn.</h1>
+  </div>
+  <div class="flex justify-center items-center -mt-3">
+    <div class="flex justify-center items-center bg-gray-100 shadow-xl p-6 w-11/12">
+      <p class="text-balance font-fancy text-base sm:text-lg  sm:text-center lg:text-xl lg:p-10 ">" 
+        Experience the perfect blend of rich coffee, 
+        cozy ambiance, good service,
+        and delightful flavors.
+        A place to relax, unwind, and create unforgettable moments."</p>
+    </div>
+  </div>
+ 
+  <!-- Service -->
 
-
+   <div class="flex flex-col justify-center items-center w-full ">
+    <div class="flex justify-center items-center mt-16 ">
+      <h1 class="text-xl font-fancy font-medium">Our Services</h1>
+    </div>
+     <div class="grid grid-cols-1 gap-4">
+     <div class="w-72 h-80  ">
+       
+     </div>
+     </div>
+   </div>
 
 <div class="mb-96"></div>
 
 </body>
+<style>
+
+
+
+</style>
 <script src="script.js"></script>
 </html>
