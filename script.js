@@ -2,11 +2,24 @@
 const checkBox = document.getElementById('checkBox');
 const slide  = document.getElementById('slide');
 
-checkBox.addEventListener('click', () => {
+function triggerSlide(){
   slide.classList.toggle('translate-x-full');
-slide.classList.add('flex');
-  slide.classList.remove('hidden');
+};
+
+checkBox.addEventListener('click', (event) => {
+event.stopPropagation();
+  triggerSlide();
+
 });
+
+window.addEventListener('click',(event)=>{
+ if(!slide.contains(event.target)){
+ triggerSlide();
+ }
+});
+
+
+
 
 
 //Fungsi Carousel
@@ -32,7 +45,7 @@ prev.addEventListener('click',() =>{
   updateCarousel();
 })
 
-// setInterval(() => {
-//   index = (index + 1) % img.length;
-//   updateCarousel();
-// }, 3000);
+setInterval(() => {
+  index = (index + 1) % img.length;
+  updateCarousel();
+}, 3000);
