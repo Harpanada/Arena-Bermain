@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
    <!-- Google Icons -->
+  
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,8 +38,8 @@
     <ul id="" class="sm:flex hidden text-black gap-5 sm:text-lg lg:text-xl ">
       <li class="font-fancy"><a href="#home">Home</a></li>
       <li class="font-fancy"><a href="#about">About</a></li>
-      <li class="font-fancy"><a href="#service">Service</a></li>
       <li class="font-fancy"><a href="#menu">Menu</a></li>
+      <li class="font-fancy"><a href="./gallery.html">Galery</a></li>
       <li class="font-fancy"><a href="">Contact</a></li>
     </ul>
    </nav>
@@ -46,9 +47,9 @@
    <ul id="slide" class=" flex fixed top-20 right-0 h-screen  translate-x-full bg-white bg-opacity-90 transition duration-200 ease-in-out z-30
      items-center gap-10 flex-col w-1/2 text-black text-lg sm:hidden " >
      <li class="font-fancy mt-16"><a href="#home">Home</a></li>
-     <li class="font-fancy "><a href="#about">About</a></li>
-     <li class="font-fancy"><a href="#service">Service</a></li>
+     <li class="font-fancy"><a href="#about">About</a></li>
      <li class="font-fancy"><a href="#menu">Menu</a></li>
+     <li class="font-fancy "><a href="./gallery.html">Galery</a></li>
      <li class="font-fancy"><a href="">Contact</a></li>
    </ul>
   
@@ -96,7 +97,7 @@
         and delightful flavors.
         A place to relax, unwind, and create unforgettable moments."</p>
     </div>
-    <div id="service"></div>
+<div id="Profile"></div>
   </div>
 
  
@@ -104,7 +105,7 @@
   
    <div class="flex flex-col justify-center items-center w-full mt-24  ">
     <div class="flex justify-center items-center ">
-      <h1 class="text-xl font-fancy font-medium">Our Services</h1>
+      <h1 class="text-xl font-fancy font-medium">Our Profile</h1>
     </div>
      <div class="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       <div class="w-72 h-80">
@@ -146,43 +147,95 @@
    </div>
 
 <!-- Product -->
- <div  class="flex flex-col justify-center items-center scroll-smooth">
-   <h1 class=" font-fancy font-medium text-xl mb-4">Our New Menu</h1>
-   <div class="w-11/12 h-80 overflow-x-auto overflow-y-hidden ">
-     <div class="flex justify-start items-center flex-nowrap gap-6 ">
-       <div class="flex gap-6 ">
+ <div class="relative ">
+   <!-- Tombol Kiri -->
+   <button id="prevA" class=" hidden sm:inline absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-white p-2 rounded-full z-10 shadow-xl">
+    <img class="w-8 " src="./resource/arrow_left_alt_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="">
+  </button>
+
+   <div 
+   class="flex flex-col justify-center items-center scroll-smooth ">
+     <h1 class=" font-fancy font-medium text-xl mb-4">Our New Menu</h1>
+     <div id="menuContainer"  class="w-11/12 h-80 overflow-x-auto overflow-y-hidden ">
+       <div class="flex justify-start items-center flex-nowrap gap-6">
+         <div class="flex gap-6 ">
+           <div class="h-80 w-72 flex-shrink-0 ">
+             <img class="object-contain w-full h-1/2 object-top  " src="./resource/Product_img/2.jpg" alt="">
+             <h3 class="text-yellow-950 text-lg pt-2  italic font-semibold ">Kopiin Hot Latte</h3>
+             <p class="text-balance text-sm text-black opacity-90">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eaque expedita sequi cumque, reiciendis quibusdam!</p>
+         </div>
          <div class="h-80 w-72 flex-shrink-0 ">
-           <img class="object-contain w-full h-1/2 object-top  " src="./resource/Product_img/2.jpg" alt="">
-           <h3 class="text-yellow-950 text-lg pt-2  italic font-semibold ">Kopiin Hot Latte</h3>
+          <img class="object-contain w-full h-1/2 object-top  " src="./resource/Product_img/1.jpg" alt="">
+          <h3 class="text-yellow-950 text-lg pt-2  italic font-semibold ">Coffe Milk Shake</h3>
+          <p class="text-balance text-sm text-black opacity-90">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eaque expedita sequi cumque, reiciendis quibusdam!</p>
+      </div>
+         <div class="h-80 w-72 flex-shrink-0">
+           <img class="object-contain w-full h-1/2 object-top  " src="./resource/Product_img/3.jpg" alt="">
+           <h3 class="text-yellow-950 text-lg pt-2  italic font-semibold ">Iced Americano</h3>
            <p class="text-balance text-sm text-black opacity-90">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eaque expedita sequi cumque, reiciendis quibusdam!</p>
        </div>
-       <div class="h-80 w-72 flex-shrink-0 ">
-        <img class="object-contain w-full h-1/2 object-top  " src="./resource/Product_img/1.jpg" alt="">
-        <h3 class="text-yellow-950 text-lg pt-2  italic font-semibold ">Coffe Milk Shake</h3>
-        <p class="text-balance text-sm text-black opacity-90">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eaque expedita sequi cumque, reiciendis quibusdam!</p>
-    </div>
        <div class="h-80 w-72 flex-shrink-0">
-         <img class="object-contain w-full h-1/2 object-top  " src="./resource/Product_img/3.jpg" alt="">
-         <h3 class="text-yellow-950 text-lg pt-2  italic font-semibold ">Iced Americano</h3>
+         <img class="object-contain w-full h-1/2 object-top  " src="./resource/Product_img/4.jpg" alt="">
+         <h3 class="text-yellow-950 text-lg pt-2  italic font-semibold ">Cichken Sandwich</h3>
          <p class="text-balance text-sm text-black opacity-90">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eaque expedita sequi cumque, reiciendis quibusdam!</p>
      </div>
      <div class="h-80 w-72 flex-shrink-0">
-       <img class="object-contain w-full h-1/2 object-top  " src="./resource/Product_img/4.jpg" alt="">
-       <h3 class="text-yellow-950 text-lg pt-2  italic font-semibold ">Cichken Sandwich</h3>
+       <img class="object-contain w-full h-1/2 object-top  " src="./resource/Product_img/5.jpg" alt="">
+       <h3 class="text-yellow-950 text-lg pt-2  italic font-semibold ">Kopiin Salad</h3>
        <p class="text-balance text-sm text-black opacity-90">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eaque expedita sequi cumque, reiciendis quibusdam!</p>
-   </div>
-   <div class="h-80 w-72 flex-shrink-0">
-     <img class="object-contain w-full h-1/2 object-top  " src="./resource/Product_img/5.jpg" alt="">
-     <h3 class="text-yellow-950 text-lg pt-2  italic font-semibold ">Kopiin Salad</h3>
-     <p class="text-balance text-sm text-black opacity-90">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eaque expedita sequi cumque, reiciendis quibusdam!</p>
-   </div>
+     </div>
+         </div>
        </div>
      </div>
    </div>
+ <!-- Tombol Kanan -->
+ <button id="nextA" class=" hidden sm:inline absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-xl">
+  <img class="w-8 " src="./resource/arrow_right_alt_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="">
+</button>
  </div>
 
-<div class="mb-96"></div>
 
+<div class=" bg-gray-200 w-full h-96"></div>
+
+
+<footer class="bg-white text-black py-10">
+  <div class="container mx-auto px-6 md:px-12 lg:px-20">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Kolom 1: Logo & Deskripsi -->
+          <div>
+              <h2 class="border-b w-28 border-gray-700 text-3xl font-lora italic  font-bold">KopiIn.</h2>
+           
+              <p class="text-gray-400 mt-2">
+        
+                The best place to enjoy your favorite coffee and snacks.
+              </p>
+          </div>
+
+          <!-- Kolom 2: Menu Navigasi -->
+          <div>
+              <h3 class="text-lg font-semibold">Quick Links</h3>
+              <ul class="mt-2 space-y-2">
+                  <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Gallery</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Menu</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+              </ul>
+          </div>
+
+          <!-- Kolom 3: Sosial Media & Kontak -->
+          <div>
+              <h3 class="text-base font-fancy font-semibold">PT Kopijaya Great</h3>
+              <p class="text-gray-400 mt-2">📍 Address: Jakarta, Indonesia</p>
+              <p class="text-gray-400">📞 Contact: +62 812 3456 7890</p>
+          </div>
+      </div>
+
+      <!-- Garis Pembatas -->
+      <div class="border-t border-gray-700 mt-6 pt-4 text-center text-gray-500 text-sm">
+          &copy; 2025 Official KopiIn. All Rights Reserved.
+      </div>
+  </div>
+</footer>
 
 
 

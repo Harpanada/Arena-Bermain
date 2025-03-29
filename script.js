@@ -88,3 +88,17 @@ prev.addEventListener('click', () => {
 // Mulai interval pertama kali
 startInterval();
 
+
+//Menu Button
+const prevA =document.getElementById('prevA');
+const nextA =document.getElementById('nextA');
+const menuContainer = document.getElementById('menuContainer');
+
+prevA.addEventListener('click', () => {
+  menuContainer.scrollBy({left: -200, behavior: 'smooth'});
+})
+
+nextA.addEventListener('click', () => {
+  menuContainer.scrollBy({left: 200, behavior: 'smooth'});
+})
+
